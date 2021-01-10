@@ -15,6 +15,8 @@
         </groups>
         <classes>
             <class name="com.epam.prejap.tetris.block.LBlockTest"/>
+            <class name="com.epam.prejap.tetris.block.IBlockTest"/>
+            <class name="com.epam.prejap.tetris.block.ZBlockTest"/>
             <class name="com.epam.prejap.tetris.block.BlockFeedTest"/>
             <class name="com.epam.prejap.tetris.player.RandomPlayerTest"/>
             <class name="com.epam.prejap.tetris.game.PrinterTest"/>
