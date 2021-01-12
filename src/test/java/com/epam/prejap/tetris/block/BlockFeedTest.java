@@ -46,31 +46,4 @@ public class BlockFeedTest {
         assertEquals(numOfBlocks, 1);
     }
 
-    public void shallContainZBlock() {
-        //given
-        List<Supplier<Block>> feedList = new BlockFeed().blocks();
-
-        //when
-        boolean containsZBlock = feedList.stream()
-                .map(Supplier::get)
-                .anyMatch(e -> e instanceof ZBlock);
-
-        //then
-        assertTrue(containsZBlock);
-    }
-
-    public void shallContainOnlyOneZBlock() {
-        //given
-        List<Supplier<Block>> feedList = new BlockFeed().blocks();
-
-        //when
-        long actual = feedList.stream()
-                .map(Supplier::get)
-                .filter(block -> block instanceof ZBlock)
-                .count();
-
-        //then
-        assertEquals(actual, 1);
-    }
-
 }
