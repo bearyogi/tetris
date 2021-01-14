@@ -14,7 +14,5 @@ final class ZBlock extends Block {
             {0, 1, 1},
     };
 
-    ZBlock() {
-        super(IMAGE);
-    }
+    ZBlock() { super(IMAGE,Color.MAGENTA); }
 }
