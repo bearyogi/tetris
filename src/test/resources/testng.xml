@@ -14,6 +14,7 @@
                 <include name="IBlock"/>
                 <include name="OBlock"/>
                 <include name="JBlock"/>
+                <include name="ZBlock"/>
             </define>
             <define name="Player">
                 <include name="RandomPlayer"/>
